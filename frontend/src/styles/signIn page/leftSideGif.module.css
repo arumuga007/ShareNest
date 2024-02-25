@@ -1,0 +1,7 @@
+.container {
+    width: 50%;
+    height: 80%;
+    align-self: flex-end;
+    z-index: 100;
+    margin-bottom: -10px;
+}

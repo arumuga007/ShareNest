@@ -1,0 +1,21 @@
+const { generateToken } = require('../auth/jwt');
+const userModel = require('./../models/usersModel');
+
+const createUser = async (req, res) => {
+    const userInfo = req.body.userInfo;
+    console.log(userInfo.length)
+
+    try {
+        const userId = await userModel.createUser(userInfo);
+        const userToken = generateToken({userId});
+        console.log(userToken);
+        res.status(200).json(userToken);
+    }
+    catch(error) {
+        console.log('error occured in user controller while creating a new user in user controller', error);
+    }
+}
+
+module.exports = {
+    createUser
+};

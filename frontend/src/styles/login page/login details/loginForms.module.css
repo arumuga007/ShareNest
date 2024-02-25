@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 15;
+    transition: all linear .3s;
+}
+.header {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.input-field-container {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+}
+.input-field-container input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 2px 8px 12px;
+    border: none;
+    font-size: 1.1rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+    position: relative;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+}
+
+.input-label span {
+    color: red;
+}
+
+.next-btn {
+    background-color: rgb(8, 163, 244);
+    align-self: flex-end;
+    margin: 15px 10px 0px 0px;
+    padding: 7px 30px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-container {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.next-button {
+    border: 2px solid rgb(8, 163, 244);
+    background-color: rgb(8, 163, 244);
+    align-self: flex-end;
+    margin: 15px 10px 0px 0px;
+    padding: 7px 30px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.back-button {
+    border: 2px solid rgb(8, 163, 244);
+    background-color: white;
+    align-self: flex-end;
+    margin: 15px 10px 0px 0px;
+    padding: 7px 30px;
+    border-radius: 5px;
+    color: rgb(8, 163, 244);
+    cursor: pointer;
+}
+
+.warning-text {
+    position: absolute;
+    bottom: -24px;
+    font-size: .8rem;
+    color: red;
+    display: none;
+}
+
+.show-warning {
+    display: block;
+}
+
+.invalid-input {
+    box-shadow: 0px 0px 5px rgba(256,0,0,.2) !important;
+}

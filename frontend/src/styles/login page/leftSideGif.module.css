@@ -1,0 +1,6 @@
+.container {
+    width: 35%;
+    height: 80%;
+    align-items: center;
+    z-index: 100;
+}
