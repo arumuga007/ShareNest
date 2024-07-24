@@ -1,0 +1,105 @@
+.container {
+    width: 100vw;
+    display: flex;
+    padding: 30px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.header {
+    width: 65%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+
+}
+
+.single-product-container {
+    width: 65%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+    display: flex;
+}
+
+.image-container {
+    height: 160px;
+    width: 25%;
+}
+
+.image-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
+}
+
+.title-price-container {
+    /* width: 75%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.price {
+    color: #2DCE40;
+    font-weight: 450;
+    align-self: flex-end;
+}
+
+.deposit-price {
+    font-size: .9rem;
+    color: red;
+    display: flex;
+    gap: 5px;
+}
+
+.deposit-price i {
+    margin-top: 4px;
+    color: green;
+}
+
+.deposit-price span {
+    color: #F70800;
+}
+
+.category-brands-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.categories, .brands {
+    display: flex;
+    gap: 5px;
+}
+
+.categories span, .brands span {
+    color: #2DCE40;
+} 
+
+.remove-btn-container {
+    align-self: flex-end;
+    color: #F70800;
+    cursor: pointer;
+}

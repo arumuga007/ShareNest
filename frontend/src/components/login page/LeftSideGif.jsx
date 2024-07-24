@@ -12,7 +12,7 @@ const LeftSideGif = () => {
             container: gifRef.current,
             renderer: 'svg', 
             loop: true,
-            autoplay: true,
+            autoplay: false,
             animationData: LoginPageIllustration
         };
         var anim = bodymovin.loadAnimation(options);

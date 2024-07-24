@@ -1,0 +1,174 @@
+.container {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    padding: 14px 10px;
+    transition: all linear .2s;
+}
+.image-container {
+    height: 150px;
+    width: 150px;
+    
+}
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.otp-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: calc(100% - 150px - 7%);
+    transition: all linear .2s;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-name-category {
+    display: flex;
+    flex-direction: column;
+}
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(8, 163, 244);
+}
+
+.product-category {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.time-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.from-container {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.from-container span{
+    color: black;
+}
+
+.renter-lender-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.details-header {
+    font-size: 1.1rem;
+    font-weight: 450;
+    color: rgba(0,0,0,.8);
+}
+
+.user-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.04rem;
+    color: black;
+}
+
+.user-details-container i {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.otp-btn {
+    align-self: flex-end;
+    color: rgba(8, 163, 244);
+    cursor: pointer;
+    transition: all linear .2s;
+}
+
+.otp-btn:hover {
+    transform: scale(1.05);
+    font-weight: 500;
+}
+
+.otp-container {
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+    transition: all linear .3s;
+    box-sizing: border-box;
+    padding: 0px 5px;
+    box-shadow: 0px -1px 0px rgba(0,0,0,.1);
+}
+
+.show-otp-container {
+    height: 95px;
+    font-size: 0.95rem;
+    color: rgba(0,0,0,.9);
+}
+
+.show-otp-container span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.otp-field-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.otp-field-container input {
+    width: 50%;
+}
+
+.submit-otp {
+    padding: 6px 25px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(8, 163, 244);
+    cursor: pointer;
+    transition: all linear .2s;
+}
+
+.submit-otp:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px rgba(8, 163, 244);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container input {
+    width: 100%;
+}
+
+.invalid-input {
+    box-shadow: 0px 0px 3px rgba(256, 0,0);
+}
+
+.input-container span {
+    font-weight: normal;
+    font-size: .9rem;
+    color: red;
+}

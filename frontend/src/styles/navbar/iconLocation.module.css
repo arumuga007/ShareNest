@@ -21,6 +21,7 @@
     align-items: center;
     gap: 5px;
     font-size: .87rem;
+    cursor: pointer;
 }
 
 .single-navicon-container i {

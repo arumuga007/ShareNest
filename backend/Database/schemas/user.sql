@@ -11,6 +11,8 @@ CREATE TABLE users(
     village_town VARCHAR(30) NOT NULL,
     door_no VARCHAR(10) NOT NULL,
     street VARCHAR(50) NOT NULL,
+    latitude NUMERIC(10, 6),
+    longitude NUMERIC(10, 6),
     exact_location Geography(Point, 4326) NOT NULL,
     email_verified BOOLEAN DEFAULT FALSE
 );

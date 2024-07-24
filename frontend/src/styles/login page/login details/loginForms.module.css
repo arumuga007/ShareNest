@@ -76,6 +76,9 @@
     cursor: pointer;
 }
 
+.next-button p {
+    display: none;
+}
 .back-button {
     border: 2px solid rgb(8, 163, 244);
     background-color: white;
@@ -85,6 +88,11 @@
     border-radius: 5px;
     color: rgb(8, 163, 244);
     cursor: pointer;
+}
+
+button {
+    font-size: 1rem;
+    font-family: 'poppins';
 }
 
 .warning-text {
@@ -101,4 +109,34 @@
 
 .invalid-input {
     box-shadow: 0px 0px 5px rgba(256,0,0,.2) !important;
+}
+
+.disable-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 163, 244, .7);
+    border: 2px solid rgb(8, 163, 244, .7);
+}
+
+.disable-btn span {
+    visibility: hidden;
+}
+
+.disable-btn p {
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    border-top-color: rgba(256,256,256,.3);
+    animation: disableBtn 1s linear 0s infinite forwards;
+}
+
+@keyframes disableBtn {
+    100% {
+        transform: rotate(360deg);
+    }
 }

@@ -1,0 +1,50 @@
+.container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.left-container {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.right-gif {
+    margin-top: -50px;
+    margin-right: -30px;
+    width: 50%;
+    align-self: flex-start;
+}
+
+.intro-para {
+    font-size: 3.1rem;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.intro-para span {
+    color: rgb(8, 163, 244);
+}
+
+.intro-subpara {
+    font-size: 1.2rem;
+    color: rgba(0,0,0,.7);
+    line-height: 34px;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+.intro-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-self: flex-start;
+    background-color: rgba(8, 163, 244);
+    color: white;
+}

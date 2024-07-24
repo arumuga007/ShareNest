@@ -8,7 +8,7 @@
 }
 
 .inner-container {
-    min-height: 90vh;
+    min-height: 95vh;
     width: 75vw;
     display: flex;
     flex-direction: row;
@@ -17,3 +17,31 @@
     overflow: hidden;
 }
 
+.existing-account {
+    align-self: center;
+    display: flex;
+    gap: 4px;
+}
+
+.login-btn {
+    color: rgba(8, 163, 244);
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.login-btn::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 2.5px;
+    border-radius: 4px;
+    width: 0%;
+    background: rgba(8, 163, 244);
+    transition: all linear .2s;
+}
+
+.login-btn:hover::after {
+    width: 100%;
+}

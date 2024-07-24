@@ -1,28 +1,26 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import styles from './../../../styles/login page/login details/loginForms.module.css';
+import LoginBtn from '../LoginBtn';
 
 const PersonalDetailsForm = (props) => {
 
-    const [isValid, setIsValid] = useState(Array(6).fill(false))
-
+    const [isValid, setIsValid] = useState(Array(6).fill(false));
     const setValue =(event, index) => {
         setIsValid(Array(6).fill(false));
         props.userInfo[index] = event.target.value;
     }
 
     const checkValues = () => {
-        return true
         let newValid = new Array(6).fill(false);
         console.log('checkValue called');
         for(let i = 0; i < 6; i++) {
-            console.log(props.userInfo[i]);
-            if(props.userInfo[i] == '' || (i == 5 && (props.userInfo[5] != props.userInfo[4]))) {
+            if(props.userInfo[i] == "") {
                 newValid[i] = true
-                console.log('called');
                 setIsValid(newValid)
                 return false;
             }
         }
+        console.log(props.userInfo);
         return true;
     }
 
@@ -38,9 +36,9 @@ const PersonalDetailsForm = (props) => {
                     <div className={`${styles['warning-text']} ${isValid[0] && styles['show-warning']}`}>name cannot be empty</div>
                 </div>
                 <div className={styles['input-field-container']}>
-                    <div className={styles['input-label']}>set username <span>*</span></div>
-                    <input type='text' required onChange={(event) => setValue(event,1)} className={`${isValid[1] && styles['invalid-input']}`}/>
-                    <div className={`${styles['warning-text']} ${isValid[1] && styles['show-warning']}`}>username cannot be empty</div>
+                    <div className={styles['input-label']}>set password <span>*</span></div>
+                    <input type='password' required onChange={(event) => setValue(event,1)} className={`${isValid[1] && styles['invalid-input']}`}/>
+                    <div className={`${styles['warning-text']} ${isValid[1] && styles['show-warning']}`}>password cannot be empty</div>
                 </div>
                 <div className={styles['input-field-container']}>
                     <div className={styles['input-label']}>email <span>*</span></div>
@@ -53,14 +51,14 @@ const PersonalDetailsForm = (props) => {
                     <div className={`${styles['warning-text']} ${isValid[3] && styles['show-warning']}`}>enter a valid number</div>
                 </div>
                 <div className={styles['input-field-container']}>
-                    <div className={styles['input-label']}>set password <span>*</span></div>
-                    <input type='password' required onChange={(event) => setValue(event,4)} className={`${isValid[4] && styles['invalid-input']}`}/>
-                    <div className={`${styles['warning-text']} ${isValid[4] && styles['show-warning']}`}>password cannot be empty</div>
+                    <div className={styles['input-label']}>bank account no<span>*</span></div>
+                    <input type='number' required onChange={(event) => setValue(event,4)} className={`${isValid[4] && styles['invalid-input']}`}/>
+                    <div className={`${styles['warning-text']} ${isValid[4] && styles['show-warning']}`}>account no cannot be empty</div>
                 </div>
                 <div className={styles['input-field-container']}>
-                    <div className={styles['input-label']}>confirm password <span>*</span></div>
-                    <input type='password' required onChange={(event) => setValue(event,5)} className={`${isValid[5] && styles['invalid-input']}`}/>
-                    <div className={`${styles['warning-text']} ${isValid[5] && styles['show-warning']}`}>password must match</div>
+                    <div className={styles['input-label']}>IFSC code<span>*</span></div>
+                    <input type='text' required className={`${isValid[5] && styles['invalid-input']}`} onChange={(event) => setValue(event,5)} />
+                    <div className={`${styles['warning-text']} ${isValid[5] && styles['show-warning']}`}>IFSC code cannot be empty</div>
                 </div>
             </div>
             <div className={styles['next-btn']} onClick={() => {
@@ -72,6 +70,7 @@ const PersonalDetailsForm = (props) => {
                 props.nextBtn.current.style.left = 0;
                 props.nextBtn.current.style.right = 0;
             }} >next</div>
+            <LoginBtn />
         </div>
     )
 }

@@ -1,0 +1,176 @@
+.container {
+    min-height: 90vh;
+    width: 100vw;
+}
+
+.product-details-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    gap: 1vw;
+    box-sizing: border-box;
+    padding: 10vh 60px 20px 60px;
+}
+
+.image-container {
+    width: 35%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.details-container {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.review-container i{
+    color: #F70800;
+}
+
+.product-description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: justify;
+}
+
+.description-title, .user-title, .date-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.product-description{
+    color: rgba(0,0,0,.8);
+}
+
+.category-brand-container, .select-date-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.category-brand-container span {
+    color: #2DCE40;
+    /* font-size: 1.1rem; */
+    font-weight: 450;
+}
+
+.product-category, .product-brand {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* .product-brand span, .product-category span {
+    font-weight: normal;
+} */
+
+.user-info-container, .date-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.user-details-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.single-user-detail-container {
+    display: flex;
+    gap: 10px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+    border-radius: 5px;
+}
+
+.single-user-detail-container i {
+    margin-top: 3px;
+    color: blue;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.location-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.location-icon {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location-icon svg {
+    color: #147efb;
+}
+.location-desc {
+    opacity: .8;
+}
+.location-header {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.actual-location {
+    text-decoration: none;
+}
+
+.start-date-container, .end-date-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.start-date-container input , .end-date-container input{
+    padding: 7px 14px;
+}
+
+
+.rent-now-btn {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: #F70800;
+    color: white;
+    align-self: flex-start;
+    transition: all linear .3s;
+    font-weight: 450;
+}
+
+.rent-now-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 3px #F70800;
+    cursor: pointer;
+}
+
+
+.price-container {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #2DCE40;
+}
